@@ -1,0 +1,190 @@
+<div id="navbar" class="navbar navbar-default navbar-collapse h-navbar">
+    <div class="navbar-container" id="navbar-container">
+        
+        <div class="row af-head">
+            <div class="col-md-4 col-sm-4 col-xs-7 col-lg-4 af-name-head ">
+                <i class="ace-icon fa fa-hospital-o hidden-xs"></i>
+                <span style="font-size: 20px;color: white">&nbsp;Rounding Web App</span>
+                <small class="hidden-xs"><span id="lblClinicName"></span></small>
+                &nbsp;
+          
+            </div>
+            <div id="newChargeDiv" style="top: 5px" class="col-lg-1 col-md-1 col-sm-1 col-xs-1 af-name-head hidden">
+                <a title="New Charge" href="javascript:void(0)" id="btnAddRounds" class="white tip-bottom">
+                    <i id="btnNewCharge" class="fa fa-plus bigger-120"></i>
+                </a>
+                <a title="Back" class="white tip-bottom" style="display: none" role="button" id="lnklblBack">
+                    <i class="ace-icon fa fa-reply bigger-120"></i>
+                </a>
+            </div>
+             <div id="gotoReportsDiv" style="top: 5px" class="col-lg-1 col-md-1 col-sm-1 col-xs-1 af-name-head hidden">
+                 <a title="RoundingList" href="#Rounding" class="white tip-bottom">
+                    <i id="btnReport" class="fa fa-list bigger-120"></i>
+                </a>
+            </div>
+            <div class="hidden-md hidden-lg hidden-sm col-xs-3 af-name-head" style="top: 5px">
+                <a href="#logout" title="Logout" style="margin-right: 10px" class="white tip-bottom pull-right">
+                    <i class="ace-icon fa fa-power-off bigger-120"></i>
+                </a>
+            </div>
+            
+            <div class="col-md-6 col-sm-6 hidden-xs col-lg-6  af-name-head pull-right ">
+                <div align="right">
+                    <span class="YouAreLoggedInAs">You are logged in as Test,Provider1</span>
+                    &nbsp;&nbsp;
+                    <a href="#logout" title="Logout" style="margin-right: 10px" class="white tip-bottom pull-right">
+                    <i class="ace-icon fa fa-power-off bigger-120"></i>
+                    </a>
+                    
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<div class="breadcrumbs breadcrumbs" id="breadcrumbs">
+    <div id="ChargeDiv" class="col-md-3 col-sm-3 col-xs-3 width-auto pull-right">
+        <button id="btnReports" onclick="window.location.href='#Reports'" class="btn btn-xs btn-info" title="Show Reports">
+                Reports
+
+        </button>
+        <button id="btnTransfer" class="btn btn-xs btn-info disabled">
+                Transfer
+
+        </button>
+        <button id="btnSettings" onclick="window.location.href='#Rounding'" class="btn btn-xs btn-info" title="Show Rounding List">
+                Rounding List
+
+        </button>
+                    
+        <button id="btnSettings" onclick="window.location.href='#RoundingSetting'" class="btn btn-xs btn-info" title="Rounding Settings">
+                Settings
+
+        </button>
+        <button id="btnChargeHistory" onclick="window.location.href='#ChargeHistory'" class="btn btn-xs btn-info" title="Show Charge History">
+                Charge History
+
+       </button>
+                        
+        <button class="btn btn-xs btn-info" data-toggle="dropdown" title="List of relevant CPTs with brief description">
+        CPT Ref
+       </button>
+          
+                   <ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close" style="width: 300px;">
+	  
+            <li class="dropdown-header">
+		<i class="ace-icon fa fa-check"></i>
+		 Common CPT List
+	  </li>
+
+          <li class="dropdown-content">
+	      <ul class="dropdown-menu dropdown-navbar row" style="height: 500px;overflow-y: scroll;">
+	        <li class="clearfix small">
+                    <span style="color:#f89406;">99221</span> <span>: Initial hospital – Level 1</span>
+	        </li>
+                <li class="clearfix small">
+                    <span style="color:#f89406;">99222</span> <span>: Initial hospital – Level 2</span>
+	        </li>
+	        <li class="clearfix small">
+                    <span style="color:#f89406;">99223</span> <span>: Initial hospital – Level 3</span>
+	        </li>
+                <li class="clearfix small">
+                    <span style="color:#f89406;">99231</span> <span>: Follow up hospital – Level 1</span>
+               </li>
+               <li class="clearfix small">
+                   <span style="color:#f89406;">99232</span> <span>: Follow up hospital – Level 2</span>
+              </li>
+              <li class="clearfix small">
+                  <span style="color:#f89406;">99233</span> <span>: Follow up hospital – Level 3</span>
+	      </li>
+	     <li class="clearfix small">
+                 <span style="color:#f89406;">99238</span> <span>: Discharge hospital – Level 1</span>
+             </li>
+             <li class="clearfix small">
+                 <span style="color:#f89406;">99239</span> <span>: Discharge hospital – Level 2</span>
+             </li>
+             <li class="clearfix small">
+                 <span style="color:#f89406;">99251</span> <span>: Consult hospital – Level 1</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99252</span> <span>: Consult hospital – Level 2</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99253</span> <span>: Consult hospital – Level 3</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99254</span> <span>: Consult hospital – Level 4</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99255</span> <span>: Consult hospital – Level 5</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99281</span> <span>: ER visit – Level 1</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99282</span> <span>: ER visit – Level 2</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99283</span> <span>: ER visit – Level 3</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99284</span> <span>: ER visit – Level 4</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99285</span> <span>: ER visit – Level 5</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99217</span> <span>: Discharge Observation</span>
+            </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99218</span> <span>: Initial Observation – Level 1</span>
+           </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99219</span> <span>: Initial Observation – Level 2</span>
+           </li>
+           <li class="clearfix small">
+               <span style="color:#f89406;">99220</span> <span>: Initial Observation– Level 3</span>
+           </li>
+           <li class="clearfix small">
+               <span style="color:#f89406;">99224</span> <span>: Subsequent Observation – Level 1</span>
+           </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99225</span> <span>: Subsequent Observation – Level 2</span>
+           </li>
+           <li class="clearfix small">
+               <span style="color:#f89406;">99226</span> <span>: Subsequent Observation – Level 3</span>
+           </li>
+           <li class="clearfix small">
+               <span style="color:#f89406;">99234</span> <span>: Admit/Discharge on same day – Level 1</span>
+           </li>
+            <li class="clearfix small">
+                <span style="color:#f89406;">99235</span> <span>: Admit/Discharge on same day – Level 2</span>
+           </li>
+           <li class="clearfix small">
+               <span style="color:#f89406;">99236</span> <span style="max-width: 1px;">: Admit/Discharge on same day – Level 3</span>
+           </li>
+      </ul>
+  </li>
+   </ul>
+     
+       
+        </div>
+    
+  <!--  <ul class="nav nav-tabs padding-18 btn-sm"  id="myTab">
+             <li id="lnkPQRS" class="pull-left">
+              <a  data-toggle="tab" href="#PQRS" style="padding-left: 10px;padding-right:10px; padding-top: 10 px; padding-bottom: 10px;">
+                    <i class="green ace-icon fa fa-dashboard smaller-90"></i>
+                    PQRS
+                </a>
+              </li>
+               <li id="lnkRVU">
+              <a  data-toggle="tab" href="#RVU" style="padding-left: 10px;padding-right:10px; padding-top: 10 px; padding-bottom: 10px;">
+                    <i class="green ace-icon fa fa-dashboard smallest"></i>
+                    RVU
+                </a>
+              </li>
+         </ul> -->
+    
+    
+    
+    
+</div>

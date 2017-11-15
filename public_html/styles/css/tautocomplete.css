@@ -1,0 +1,118 @@
+.adropdown {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: block;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    position: absolute;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10), 0px 10px 20px rgba(0,0,0,0.05), 0px 20px 20px rgba(0,0,0,0.05), 0px 30px 20px rgba(0,0,0,0.05);
+}
+
+    .adropdown table {
+        font-family: 'Arial';
+        margin: 35px 1px 0px 1px;
+        border-collapse: collapse;
+        border-bottom: 2px solid #00cccc;
+        border-spacing: 0px;
+        display: none;
+        color: #999;
+        cursor: default;
+        width: 100%;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+    }
+
+    .adropdown tr:hover {
+        background: #f4f4f4;
+        color: #555;
+    }
+
+    .adropdown th {
+        background: #00cccc;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .adropdown tr td {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+        margin: 0;
+        font-variant: normal;
+        font-size: 12px;
+        padding: 5px;
+        min-height: 15px;
+        border-bottom: 1px solid #eee;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        text-align: left;
+    }
+
+    .adropdown .selected {
+        background: #17D5D5;
+        padding-bottom: 8px;
+        color: #fff;
+    }
+
+    .adropdown div {
+        position: absolute;
+    }
+
+    .adropdown table caption {
+        caption-side: bottom;
+        padding: 10px;
+        display: none;
+        font-size: 12px;
+    }
+
+.acontainer {
+    position: relative;
+    display: inline-block;
+}
+
+    .acontainer input {
+        border-radius: 2px;
+        color: #000;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        transition: background 0.3s ease-in-out;
+        width: 100%;
+        padding: 2px 25px 2px 5px;
+        outline: 0;
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-right: 10px solid #ccc;
+        margin: 0px;
+    }
+
+        .acontainer input:focus {
+            padding: 2px 25px 2px 5px;
+            margin: 0px;
+            outline: none;
+            border-color: #9ecaed;
+            box-shadow: 0 0 2px #9ecaed;
+        }
+
+        .acontainer input::-ms-clear {
+            width: 0;
+            height: 0;
+        }
+.inputfocus {
+    outline: 0;
+    min-width: 140px;
+    margin: 5px 0px 5px 5px !important;
+    position: relative;
+    z-index: 1000;
+}
+.loading {
+    background: url(styles/img/loading.gif) no-repeat right center;
+}
+.highlight {
+    z-index:999;
+}
