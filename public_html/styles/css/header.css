@@ -1,0 +1,113 @@
+
+.af-head{
+    height:40px;
+    margin-left:0px;
+    margin-right:0px;
+}
+.af-name-head{
+    background-color: #438eb9;
+    color:white;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 10px;
+    height:40px;
+    display:inline;
+}
+
+.af-user{
+   background-color: #438eb9;
+   color:white;
+   font-size: 20px;
+   text-align: right;
+   padding-top: 10px;
+   height:40px;
+   display:inline;
+}
+/*a:hover {
+     background-color: #438eb9;
+    color:white;
+}*/
+.af-logout{
+   background-color: #438eb9;
+   color:white;
+   font-size: 20px;
+   text-align: center;
+   text-decoration: none !important;
+   height:40px;
+   padding-top: 10px;
+   display:inline;
+  
+}
+
+.af-help{
+   background-color: #438eb9;
+   color:white;
+   font-size: 16px;
+   text-align:left;
+   text-decoration: none !important;
+   height:40px;
+   padding-top: 10px;
+   display:inline;
+}
+.aFtable-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #DDD;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media only screen and (max-width:480px)
+{
+    .af-name-head{
+         font-size: 14px;
+         padding-left: 0px;
+         padding-right: 0px;
+        
+    }
+}
+@media only screen and (max-width:300px)
+{
+    .af-name-head{
+         font-size: 13px;
+         padding-left: 0px;
+         padding-right: 0px;
+        
+    }
+}
+@media only screen  and (max-width: 480px)
+{
+    
+    .af-user{
+        font-size: 20px;
+        padding-left: 0px;
+        padding-right:0px;
+       
+    }
+    .af-logout{
+        font-size: 12px;
+        padding-left: 0px;
+        padding-right:0px;
+        text-align:center;
+    }
+    .af-help{
+        font-size: 12px;
+        padding-left: 0px;
+    }
+    
+    .af-leaf{
+        width:10px;
+        height:10px;
+        text-align:left;
+    }
+}
+
+#openIssuemodel {
+    position:fixed;
+    left:30%;
+    right:30%;
+    top:10%;
+    width: 90%;
+}

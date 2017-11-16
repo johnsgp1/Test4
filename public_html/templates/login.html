@@ -1,0 +1,50 @@
+<div class="main-container" id="main-container" >
+    <div id="test"></div>
+ <!--style="background:url(styles/img/1.jpg);"-->
+            
+            <div class="space-32"></div>
+            <div class="row no-margin">
+                <div class="col-md-8 hidden-xs">
+                </div>
+                <div class="col-md-3 col-sm-8 col-xs-11">
+                    <div id="login-box" class="login-box visible widget-box" style="border:none;background: transparent;margin-left: 3px;margin-right: 3px;">
+                        <div class="widget-body" style="border:none;background: transparent">
+                            <div class="widget-main" style="border:none;background: transparent">
+                                <h3 class="header smaller lighter blue">
+                                        Sign in
+<!--                                        <small>Here</small>-->
+                                </h3>
+                                <form id="frmLogin" ng-submit="loginservice(ClinicID,username,password)" class="frm_Login">
+                                    <fieldset>
+                                        <div class="form-group">
+                                             <span class="input-icon input-icon-right" style="width: 100%">
+                                            <input type="text" name="ClinicName" id="ClinicName" class="sch-txt-control form-control" placeholder="ClinicName" maxlength="50" style="border-color: lightblue" />
+                                            <i class="ace-icon fa fa-pencil green"></i>
+                                            </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="ClinicId" id="ClinicId" ng-model="ClinicID" class="sch-txt-control form-control" placeholder="ClinicId" style="border-color: lightblue" maxlength="5"/>
+                                            </div>
+                                        <div class="form-group">
+                                            <input type="text" name="UserName" id="Username" ng-model="username" class="sch-txt-control form-control" placeholder="Username" style="border-color: lightblue" maxlength="20" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="Password" id="password" ng-model="password" class="sch-txt-control form-control" placeholder="Password" maxlength="20" style="border-color: lightblue" />
+                                        </div>
+                                        <div class="form-group">
+                                            <button  ng-disabled="frmLogin.$invalid" type="submit" id="loginbtn" class="btn btn-info btn-sm" style="float: right;margin-right: 9px; border-radius: 5px;">
+                                            <i class="ace-icon fa fa-key bigger-110"></i>Login
+                                            </button>
+                                        </div>
+                                        
+                                        <div id="DivError" class="col-md-12 col-xs-8"></div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="position: absolute;bottom:25px;width:100%;text-align:center;color:#438eb9"><span>Rounding Web App works best through Internet Explorer</span></div>
+            <div style="position: absolute;bottom:5px;width:100%;text-align:center;color:#438eb9"><span>Copyright © 2016-2017</span><span style="color:#438eb9"> Iris-Health LLC All rights reserved.</span></div>
+</div>
