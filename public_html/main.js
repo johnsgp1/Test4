@@ -14,7 +14,7 @@ require.config({
         xeditable:'lib/Angular/xeditable.min',
         bootstrap_ui:'lib/Angular/ui-bootstrap-2.2.0.min',
         bootstrap_ui_tpls:'lib/Angular/ui-bootstrap-tpls-2.2.0.min',
-        app:'AppConfig/app',   
+        app:'AppConfig/app',
         loginctrl:'controller/logincontroller',
     },
     shim:{
@@ -31,7 +31,7 @@ require.config({
 });
 
 var Global={
-    rootUrl:'http://192.168.10.11:8080/vivaLunch/rest/',
+    rootUrl:'http://localhost:8083/Cities',
 };
 
 define(['angular','app'],function(Angular){

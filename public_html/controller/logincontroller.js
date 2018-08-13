@@ -24,9 +24,9 @@ define(['angular'],function(Angular){
                 btSoftwareType:13
             };
             $http({
-             method:'POST',
-            url:global.rootUrl+'login',
-            data:angular.toJson(AuthenticateInputParam)
+             method:'GET',
+            url:Global.rootUrl,
+            data:angular.toJson()
            })
            .then(function successcallBack(data,model,text){
                if(data !== ''){

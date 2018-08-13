@@ -15,7 +15,7 @@ define([
 ],function(Angular){
     Angular.module('App',['ui.router','App.loginctrl'])
             .config(['$stateProvider','$urlRouterProvider','$httpProvider',function($stateProvider, $urlRouterProvider,$httpProvider){
-               $urlRouterProvider.otherwise('/login');
+               $urlRouterProvider.otherwise('login');
                     $stateProvider
                     .state('login',{
                             url:'/login',
